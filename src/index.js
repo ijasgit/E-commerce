@@ -13,7 +13,7 @@ root.render(
   <Provider store={store}>
     <BrowserRouter>
       <Routes>
-        <Route path="https://ijasgit.github.io/E-commerce/" element={<Login />}></Route>
+        <Route path="/E-commerce" element={<Login />}></Route>
         <Route path="app" element={<App />}></Route>
         <Route path="cart" element={<Newcart />}></Route>
         <Route path="*" element={<h1>not found</h1>}></Route>
