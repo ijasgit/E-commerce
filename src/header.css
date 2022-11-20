@@ -129,4 +129,11 @@ transform: rotate(180deg);
     color: #fffdfd;
     background-color: red;
 }
+ 
 
+
+@media screen and (max-width: 1200px) {
+    .searchComponent{
+        display: none;
+    }
+  }
