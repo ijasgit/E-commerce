@@ -1,20 +1,16 @@
 import React, { useState } from "react";
 import "./App.css";
-// import Cart from "./cart";
 import datas from "./data";
 import { useSelector, useDispatch } from "react-redux";
 import { addTocart, updateQty } from "./Cardslice";
 import { useNavigate } from "react-router-dom";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import IconButton from "@mui/material/IconButton";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Header from "./Header";
 import Footer from "./Footer";
 
 function App() {
-  const navto = useNavigate();
   const [items, setitem] = useState(datas);
-  // const [cartItems, setcart] = React.useState([]);
   const state = useSelector((state) => state.cart);
   console.log("app", state);
   const dispatch = useDispatch();
@@ -52,14 +48,14 @@ function App() {
       <Header />
       <div className="maincontainer">
         {items.map((data, index) => {
+          {/* const image = require(data.image); */}
           return (
             <div key={index} className="childcontainers">
               <img
-                src="https://toppng.com/uploads/preview/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w.png"
+                src={data.image}
                 alt="images"
               />
               <h1>{data.name}</h1>
-              {/* <button onClick={() => AddToCart(data)}>Add Cart</button> */}
               <button className="appAddcartbtn">
                 <IconButton
                   color="primary"

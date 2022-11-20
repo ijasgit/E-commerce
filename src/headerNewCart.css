@@ -1,0 +1,9 @@
+.NewcartMainContainer{
+background-color: rgb(182, 124, 220);;
+display: flex;
+cursor:default;
+}
+
+.NewcartMainContainer .firstchild{
+    cursor: pointer;
+}

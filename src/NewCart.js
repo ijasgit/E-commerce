@@ -4,9 +4,13 @@ import { addTocart, deleteTocart, updateQty } from "./Cardslice";
 import { useNavigate } from "react-router-dom";
 import DeleteIcon from '@mui/icons-material/Delete';
 import "../src/newcart.css";
+import HeaderNewcart from "./HeaderNewcart";
+import "../src/headerNewCart.css"
 
 
 function Newcart() {
+  var totalAmount=0;
+  console.log("totalamount",totalAmount)
   const navigate = useNavigate();
   const state = useSelector((state) => state);
   console.log("newcart state", state);
@@ -48,7 +52,7 @@ function Newcart() {
 
   return (
     <div>
-      <button onClick={() => navigate("/app")}>Back</button>
+      <HeaderNewcart />
       <div className="cartmaincontainer">
         <div className="cartchildcontainer">
           <table>
@@ -60,6 +64,8 @@ function Newcart() {
             </tr>
 
             {newcart.map((item, index) => {
+              totalAmount+=item.qty*item.price
+              console.log("map",totalAmount)
               return (
                 <tr key={index}>
                   <td>
@@ -83,8 +89,14 @@ function Newcart() {
                     {/* <button onClick={() => remove(item)}>Remove</button> */}
                   </td>
                 </tr>
+                
               );
             })}
+            <hr></hr>
+            <tr><td>Total</td><td></td><td></td><td>{totalAmount}</td>
+            </tr>
+            <tr><td>GST 18%</td><td></td><td></td><td>{totalAmount*(18/100)}</td></tr>
+            <tr><td>Grand Total</td><td></td><td></td><td>{(totalAmount) +(totalAmount*(18/100))}</td></tr>
           </table>
         </div>
       </div>

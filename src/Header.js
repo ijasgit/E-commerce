@@ -2,9 +2,17 @@ import React from 'react'
 import "./header.css"
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useNavigate } from "react-router-dom";
+import Badge from '@mui/material/Badge';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
+  const state = useSelector((state) => state);
+  var array=state.cart.cartitem.length
+  console.log("header state array", array);
+
     const navto=useNavigate()
+
+
   return (
     <div className='header fixed-top'>
       <div className='logo' title='Slack'><iconify-icon icon="logos:slack"></iconify-icon></div>
@@ -24,7 +32,12 @@ const Header = () => {
         <div className="searchIcon"><iconify-icon icon="fa-solid:search"></iconify-icon></div>
       </div>
       {/* <button className='loginBtn'>Login</button> */}
-      <div title='Cart'> <ShoppingCartIcon id="cartlogo" onClick={() => navto("/cart")} /></div>
+      <div title='Cart'> 
+      <Badge badgeContent={array} id="badgenoti" color="primary">
+
+      <ShoppingCartIcon id="cartlogo" color='action' onClick={() => navto("/cart")} />
+    </Badge>
+      </div>
       <div className='more-pin'>
         <div className='more'>More
           <span className="dropPin">

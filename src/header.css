@@ -125,4 +125,8 @@ color: #f1f1f1;
 transform: rotate(180deg);
 }
 
+#badgenoti span{
+    color: #fffdfd;
+    background-color: red;
+}
 
