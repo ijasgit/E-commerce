@@ -10,19 +10,12 @@ import "../src/headerNewCart.css"
 
 function Newcart() {
   var totalAmount=0;
-  console.log("totalamount",totalAmount)
-  const navigate = useNavigate();
   const state = useSelector((state) => state);
-  console.log("newcart state", state);
-  console.log("st", state.cart);
   const [newcart, setnewcart] = React.useState(state.cart.cartitem);
-  console.log("newcart", newcart);
   const dispatch = useDispatch();
 
   function incqty(cartId) {
     console.log("incqty", cartId);
-
-    // // dispatch(addTocart([...state.cart.cartitem]));
     setnewcart((newcart) => {
       return newcart.map((item) => {
         return cartId.id === item.id ? { ...item, qty: item.qty + 1 } : item;
@@ -41,7 +34,11 @@ function Newcart() {
         });
       });
     }
-    // dispatch(addTocart([...state.cart.cartitem]));
+    if(cartId.qty>1){
+      var newqty = cartId.qty - 1;
+      dispatch(updateQty({ id: cartId.id, qty: newqty }));
+    }
+   
   }
 
   function remove(data) {
@@ -69,7 +66,7 @@ function Newcart() {
               return (
                 <tr key={index}>
                   <td>
-                    <img className="cartimg" src={item.img} alt="image" />
+                    <img className="cartimg" src={item.image} alt="image" />
                     {item.name}
                   </td>
 

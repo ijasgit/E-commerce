@@ -6,7 +6,7 @@ function HeaderNewcart(){
     const navigate=useNavigate()
     return(
         <div className="NewcartMainContainer fixed-top">
-            <h1 className="firstchild" onClick={() => navigate("/app")}>HOME</h1><h1>/CART</h1>
+            <h1 className="firstchild" onClick={() => navigate("/app")}>HOME</h1><h1 className="secondchild" >/CART</h1>
         </div>
     )
 }

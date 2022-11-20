@@ -7,3 +7,7 @@ cursor:default;
 .NewcartMainContainer .firstchild{
     cursor: pointer;
 }
+.NewcartMainContainer .firstchild:hover{
+    color: azure;
+}
+

@@ -1,6 +1,11 @@
+import hp from "/home/oem/cardreact/src/images/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w-removebg-preview.png"
+import mac from "/home/oem/cardreact/src/images/download.jpg"
+import sony from "/home/oem/cardreact/src/images/download-removebg-preview (1).png"
+import asus from "/home/oem/cardreact/src/images/download-removebg-preview.png"
+import lenovo from "/home/oem/cardreact/src/images/images-removebg-preview.png"
 const datas = [
   {
-    image:"https://toppng.com/uploads/preview/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w.png",
+    image:hp,
     userId: 1,
     name:"hp",
     id: 0,
@@ -20,14 +25,14 @@ const datas = [
   {
     image:"https://toppng.com/uploads/preview/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w.png",
     userId: 3,
-    name:"hp",
+    name:"hp-2022",
     id: 3,
     title: "delectus aut autem",
     qty: 0,
     price:20000
   },
   {
-    image:"https://toppng.com/uploads/preview/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w.png",
+    image:mac,
     userId: 3,
     name:"mac",
     id: 4,
@@ -36,7 +41,7 @@ const datas = [
     price:20000
   },
   {
-    image:"https://toppng.com/uploads/preview/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w.png",
+    image:asus,
     userId: 3,
     name:"asus",
     id: 5,
@@ -45,7 +50,7 @@ const datas = [
     price:20000
   },
   {
-    image:"https://toppng.com/uploads/preview/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w.png",
+    image:lenovo,
     userId: 3,
     name:"lenovo",
     id: 6,
@@ -54,7 +59,7 @@ const datas = [
     price:20000
   },
   {
-    image:"https://toppng.com/uploads/preview/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w.png",
+    image:sony,
     userId: 3,
     name:"sony",
     id: 7,

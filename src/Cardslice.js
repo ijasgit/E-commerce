@@ -11,7 +11,7 @@ export const cartslice = createSlice({
       console.log("slice state", action);
       state.cartitem = action.payload;
       console.log(state.cartitem);
-      // console.log(cartslice.cartitem)
+      console.log(cartslice.cartitem)
     },
     deleteTocart: (state, action) => {
       state.cartitem = state.cartitem.filter(

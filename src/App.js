@@ -23,7 +23,8 @@ function App() {
     if (bool === false) {
       data.qty++;
       dispatch(addTocart([...state.cartitem, data]));
-    } else {
+    } 
+    else {
       console.log("else is running");
       // data.qty++;
       // dispatch(addTocart([...state.cartitem]));
