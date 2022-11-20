@@ -1,0 +1,35 @@
+.loginContainer{
+    padding: 45px;
+    margin: 10px;
+    border: 2px #ffffff solid;
+    border-radius: 7px;
+    background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #000000b5;
+background-image: url("https://www.transparenttextures.com/patterns/climpek.png") ;
+min-height: 948px;
+}
+.body button{
+    background-color: #464343;
+border-color: #464343;
+}
+
+.passwordfield{
+    border-radius: 5px px 0px 5px;
+    position: relative;
+}
+
+.visibleicon{
+    position: absolute;
+    left: 88%;
+    top: 5%;
+}
+
+

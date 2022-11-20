@@ -1,0 +1,8 @@
+.footermaincontainer{
+    display: flex;
+    justify-content: center;
+    background-color: #000000b5;
+    background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+    color: rgb(164, 158, 158);
+    padding: 20px;
+}

@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.maincontainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  background-color: #000000b5;
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+  /* min-height: 948px; */
+
 }
 
-.App-link {
-  color: #61dafb;
+.childcontainers {
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+  height: max-content;
+  margin-top: 90px;
+  margin-bottom: 68px;
+  align-items: center;
+  /* box-shadow: 8px 11px 27px 17px #8f8c8cc2; */
+
+  /* box-shadow: 5px 5px 5px 5px red; */
+}
+.childcontainers:hover{
+ 
+  box-shadow: 8px 9px 41px 8px #8f8c8cc2;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  width: 250px;
+}
+
+.appAddcartbtn{
+  border: 1px blue solid ;
+  border-radius: 5px;
+}
+
+.appAddcartbtn:hover{
+  border: 1px green solid ;
+  background-color: rgb(0, 0, 0);
+  font-size: 35px;
+}
+.appAddcartbtn p{
+margin: 0px;
 }

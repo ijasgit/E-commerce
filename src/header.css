@@ -1,0 +1,128 @@
+.header {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    padding: 10px 5px;
+    background-color: rgb(149, 138, 155);
+    height: auto;
+    text-align: center;
+}
+
+.header .logo{
+    font-size: 25px;
+}
+h3{
+    padding: 2px;
+    margin: 0px;
+}
+.searchBar{
+    height: 33px;
+    width: 690px;
+    border-width: 0px;
+    /* border: 2px solid ; */
+    border-radius: 5px 0px 0px 5px;
+    text-align: center;
+    background-color: #f1f1f1; 
+    outline: 0 none;
+    /* border-color:#f1f1f1 ; */
+
+}
+.searchIcon{
+    padding-top: 6px;
+    padding-right: 10px;
+    font-size: 20px; 
+    width: auto;
+    height: 33px; 
+    background-color: #f1f1f1;
+    background: size 10px;
+    margin-top: 0px;
+    border-radius: 0px 5px 5px 0px;
+}
+.searchIcon:hover{
+    color:rgb(182, 124, 220)
+}
+.searchComponent{
+    display: flex;
+    flex-direction: row;
+}
+/* .cart-icon{
+    padding-top: 02px;
+    font-size: 20px;
+    font-weight: bold; 
+} */
+#cartlogo{
+    font-size: 32px;
+}
+#cartlogo:hover,.locationLogo:hover,.header .logo:hover{
+    color:aliceblue
+}
+.dropDown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 3px;
+}
+.dropDown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    border-radius: 3px;
+   
+}
+.dropDown{
+    position: relative;
+    /* display: inline-block; */
+}
+a:hover {
+    background-color: rgb(221, 230, 230);
+}
+.dropDown:hover .dropDown-content{display: block}
+.dropDown:hover {
+    color: #f1f1f1;
+}
+.dropDown:hover .dropPin{
+    transform: rotate(180deg);
+}
+.dropPin{
+    font-size: 20px;
+    transition: 0.3s;
+    display: inline-block;
+}
+.loginBtn{
+    height: 33px;
+    border-radius: 5px;
+    outline: none;
+    border-color: floralwhite;
+    font-size: 15px;
+    font-weight:bold;
+    width: auto;
+    padding: 0px 25px;
+
+}
+.loginBtn:hover{
+    background-color: rgb(182, 124, 220);
+    color: #f1f1f1;
+    box-shadow: none;
+    border-color:#f1f1f1 ;
+    outline: 0 none;
+}
+.more{
+    font-size: 23px;
+    font-weight:600;
+    padding-left: 15px;
+}
+.more:hover{
+color: #f1f1f1;
+}
+.more-pin:hover .dropDown-content{display: block;}
+.more:hover .dropPin{
+color: #f1f1f1;
+transform: rotate(180deg);
+}
+
+

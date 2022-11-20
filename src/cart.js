@@ -1,34 +1,38 @@
-import React from "react";
+// import React from "react";
 
-function Cart(props) {
-  const cartdata = props.cartdata;
+// function Cart(props) {
+// var cartdata = props.cartdata;
+//   console.log("cartdata",cartdata)
 
-  var [newcart, setnewcart] = React.useState([cartdata]);
+//   var [newcart, setnewcart] = React.useState(cartdata);
+//   console.log("newcart",newcart)
 
-  function incqty(data) {
-    data.qty++;
-    setnewcart([...newcart]);
-    console.log(data);
-  }
+//   function incqty(data) {
+//     data.qty++;
+//     setnewcart([...newcart]);
+//     console.log(data,newcart);
+//   }
 
-  function decqty(data) {
-    if (data.qty > 0) {
-      data.qty--;
-      setnewcart([...newcart]);
-      console.log(data);
-    }
-  }
+//   function decqty(data) {
+//     if (data.qty > 0) {
+//       data.qty--;
+//       setnewcart([...newcart]);
+//       console.log(data);
+//     }
+//   }
 
-  return cartdata.map((data) => {
-    return (
-      <div>
-        <h1>{data.name}</h1>
-        <h1>{data.qty}</h1>
-        <button onClick={() => incqty(data)}>+</button>
-        <button onClick={() => decqty(data)}>-</button>
-      </div>
-    );
-  });
-}
+//   function remove(data) {
+//     console.log("removed");
+//     console.log(data,data.id);
+//     setnewcart((prevalue) => {
+//       return prevalue.filter((item, index) => {
+//         console.log("index",index)
+//         return index !== (data.id);
+//       });
+//     });
+//   }
 
-export default Cart;
+//   return ;
+// }
+
+// export default Cart;
