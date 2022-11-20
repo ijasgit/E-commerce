@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/E-commerce/static/css/main.99cdce89.css",
+    "main.js": "/E-commerce/static/js/main.ab711e09.js",
+    "static/media/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w-removebg-preview.png": "/E-commerce/static/media/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w-removebg-preview.2b669ab2ca5b2ada5d58.png",
+    "static/media/download-removebg-preview.png": "/E-commerce/static/media/download-removebg-preview.1ce770684eb03df0feb1.png",
+    "static/media/images-removebg-preview.png": "/E-commerce/static/media/images-removebg-preview.9e06f875dd44d68be880.png",
+    "static/media/download-removebg-preview (1).png": "/E-commerce/static/media/download-removebg-preview (1).def896f4a172f23a003e.png",
+    "index.html": "/E-commerce/index.html",
+    "main.99cdce89.css.map": "/E-commerce/static/css/main.99cdce89.css.map",
+    "main.ab711e09.js.map": "/E-commerce/static/js/main.ab711e09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99cdce89.css",
+    "static/js/main.ab711e09.js"
+  ]
+}
