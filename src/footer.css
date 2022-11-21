@@ -1,8 +1,50 @@
-.footermaincontainer{
+.footermaincontainer {
     display: flex;
-    justify-content: center;
-    background-color: #000000b5;
-    background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
-    color: rgb(164, 158, 158);
-    padding: 20px;
+    justify-content: space-around;
+    margin-top: 30px;
+    background-color: #f1f1f1;
+    align-items: center;
+    height: 70px;
 }
+
+.footermaincontainer img {
+    width: 90px;
+    height: 20px;
+}
+
+.footermaincontainer .paymode {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footermaincontainer .paymode img {
+    width: 70px;
+    height: 40px;
+}
+
+.footermaincontainer .leftpart {
+    display: flex;
+    column-gap: 2px;
+}
+
+
+.footermaincontainer .leftpart svg,
+.footermaincontainer .leftpart span{
+    color: grey;
+    font-size: 11.5px;
+}
+.footermaincontainer .leftpart svg
+{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+@media (max-width: 600px) {
+    .footermaincontainer{
+        flex-direction: column;
+       
+    }
+    .footermaincontainer .paymode{
+        column-gap: 0px;
+    }
+  }

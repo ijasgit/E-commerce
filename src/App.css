@@ -1,32 +1,36 @@
+/* .bodycontainer{
+  background-color: #000000b5;
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+} */
+
+
+
 .maincontainer {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 100px;
-  background-color: #000000b5;
-  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+  column-gap: 26px;
+  /* background-color: #000000b5;
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png"); */
   /* min-height: 948px; */
   padding: 0px 11px;
 }
 
 .childcontainers {
-  border: 1px solid;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
-  height: max-content;
-  margin-top: 90px;
-  margin-bottom: 68px;
-  align-items: center;
-  /* box-shadow: 8px 11px 27px 17px #8f8c8cc2; */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f1f1f1;
+    /* background-image: url(https://www.transparenttextures.com/patterns/climpek.png); */
+    height: max-content;
+    margin-top: 90px;
+    align-items: center;
 
-  /* box-shadow: 5px 5px 5px 5px red; */
 }
-.childcontainers:hover{
- 
+
+.childcontainers:hover {
+
   box-shadow: 8px 9px 41px 8px #8f8c8cc2;
 
 
@@ -36,17 +40,20 @@ img {
   width: 240px;
   height: 205px;
 }
+.rating{
+  margin-bottom: 10px;
+}
 
-.appAddcartbtn{
-  border: 1px blue solid ;
+.appAddcartbtn {
+  border: 1px blue solid;
   border-radius: 5px;
 }
 
-.appAddcartbtn:hover{
-  border: 1px green solid ;
-  background-color: rgb(0, 0, 0);
-  font-size: 35px;
+.appAddcartbtn:hover {
+  border: 1px green solid;
+  background-color: rgb(0 255 8 / 41%);
 }
-.appAddcartbtn p{
-margin: 0px;
+
+.appAddcartbtn p {
+  margin: 0px;
 }

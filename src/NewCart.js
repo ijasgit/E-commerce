@@ -2,14 +2,15 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addTocart, deleteTocart, updateQty } from "./Cardslice";
 import { useNavigate } from "react-router-dom";
-import DeleteIcon from '@mui/icons-material/Delete';
+import DeleteIcon from "@mui/icons-material/Delete";
 import "../src/newcart.css";
 import HeaderNewcart from "./HeaderNewcart";
-import "../src/headerNewCart.css"
-
+import "../src/headerNewCart.css";
+import Footer from "./Footer";
+import Suggestion from "./Suggestion";
 
 function Newcart() {
-  var totalAmount=0;
+  var totalAmount = 0;
   const state = useSelector((state) => state);
   const [newcart, setnewcart] = React.useState(state.cart.cartitem);
   const dispatch = useDispatch();
@@ -34,11 +35,10 @@ function Newcart() {
         });
       });
     }
-    if(cartId.qty>1){
+    if (cartId.qty > 1) {
       var newqty = cartId.qty - 1;
       dispatch(updateQty({ id: cartId.id, qty: newqty }));
     }
-   
   }
 
   function remove(data) {
@@ -49,20 +49,26 @@ function Newcart() {
 
   return (
     <div>
-      <HeaderNewcart />
+      <div class="sticky-top">
+        <HeaderNewcart />
+      </div>
+
       <div className="cartmaincontainer">
+        <div>
+          <p>Shopping Cart</p>
+        </div>
         <div className="cartchildcontainer">
           <table>
             <tr>
               <td>Product</td>
-              <td>qty</td>
-              <td>price</td>
+              <td>Qty</td>
+              <td>Price</td>
               <td>Amount</td>
             </tr>
 
             {newcart.map((item, index) => {
-              totalAmount+=item.qty*item.price
-              console.log("map",totalAmount)
+              totalAmount += item.qty * item.price;
+              console.log("map", totalAmount);
               return (
                 <tr key={index}>
                   <td>
@@ -82,20 +88,37 @@ function Newcart() {
                   <td>{item.price}</td>
                   <td>{item.qty * item.price}</td>
                   <td>
-                  <DeleteIcon id="deletebtn" onClick={() => remove(item)}/>
+                    <DeleteIcon id="deletebtn" onClick={() => remove(item)} />
                     {/* <button onClick={() => remove(item)}>Remove</button> */}
                   </td>
                 </tr>
-                
               );
             })}
             <hr></hr>
-            <tr><td>Total</td><td></td><td></td><td>{totalAmount}</td>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Total</td>
+              <td>{totalAmount}</td>
             </tr>
-            <tr><td>GST 18%</td><td></td><td></td><td>{totalAmount*(18/100)}</td></tr>
-            <tr><td>Grand Total</td><td></td><td></td><td>{(totalAmount) +(totalAmount*(18/100))}</td></tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>GST 18%</td>
+              <td>{totalAmount * (18 / 100)}</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Grand Total</td>
+              <td>{totalAmount + totalAmount * (18 / 100)}</td>
+            </tr>
           </table>
         </div>
+      </div>
+      {/* <Suggestion /> */}
+      <div class="fixed-bottom">
+        <Footer />
       </div>
     </div>
   );

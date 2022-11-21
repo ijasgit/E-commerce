@@ -1,13 +1,23 @@
 .NewcartMainContainer{
-background-color: rgb(182, 124, 220);;
+background-color: rgb(255, 255, 255);;
 display: flex;
 cursor:default;
+padding: 5px 0px 0px 9px;
+box-shadow: -3px -4px 14px 5px black;
 }
 
-.NewcartMainContainer .firstchild{
+.NewcartMainContainer .firstchild,.NewcartMainContainer .secondchild{
     cursor: pointer;
+    font-size: 20px;
+    color: #004effde;
 }
 .NewcartMainContainer .firstchild:hover{
-    color: azure;
-}
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-right: 4px;
 
+}
+.NewcartMainContainer .secondchild:hover{
+    cursor: default;
+   
+}
