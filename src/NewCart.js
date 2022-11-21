@@ -117,7 +117,7 @@ function Newcart() {
         </div>
       </div>
       {/* <Suggestion /> */}
-      <div class="fixed-bottom">
+      <div className="">
         <Footer />
       </div>
     </div>
