@@ -1,6 +1,12 @@
 table,tr,td{
     border-radius: 25px;
 }
+
+.firsttr{
+    border-top: 1px #00000026 solid;
+    border-bottom: 1px #00000026 solid;
+
+}
 td{
     /* border: 2px solid; */
     padding: 20px 0px;

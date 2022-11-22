@@ -1,13 +1,12 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addTocart, deleteTocart, updateQty } from "./Cardslice";
-import { useNavigate } from "react-router-dom";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "../src/newcart.css";
 import HeaderNewcart from "./HeaderNewcart";
 import "../src/headerNewCart.css";
 import Footer from "./Footer";
-import Suggestion from "./Suggestion";
+
 
 function Newcart() {
   var totalAmount = 0;
@@ -59,7 +58,7 @@ function Newcart() {
         </div>
         <div className="cartchildcontainer">
           <table>
-            <tr>
+            <tr className="firsttr">
               <td>Product</td>
               <td>Qty</td>
               <td>Price</td>

@@ -1,6 +1,10 @@
-.d-block{
+/* .d-block{
     height: 640px;
-}
+} */
 .carousel-control-next:hover{
     background-color: none;
+}
+
+.d-block ,.w-100{
+width: 100%;
 }

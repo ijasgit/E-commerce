@@ -1,12 +1,16 @@
 import Carousel from 'react-bootstrap/Carousel';
 import "../src/uncontrolledExample.css"
+import lapwithman from "/home/oem/cardreact/src/images/man with laptop.jpg"
+import threelap from "/home/oem/cardreact/src/images/img-prod-cms-rt-microsoft-com_akamaized_net-RE4V84C.png"
+import asus from "/home/oem/cardreact/src/images/dj2kyvrcs71rc0ec-0_0_desktop_1X.jpg"
+import chuwi from "/home/oem/cardreact/src/images/2020060316041231.jpg"
 function UncontrolledExample() {
   return (
     <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://thumbs.dreamstime.com/z/new-arrival-sale-market-advertising-design-laptop-discount-offer-banner-arrivals-134026483.jpg"
+          src={threelap}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -17,7 +21,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://i.pcmag.com/imagery/articles/06p69YvIrUVj5r4bVM3xwb4-1..v1615989198.png"
+          src={asus}
           alt="Second slide"
         />
 
@@ -29,7 +33,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://i.pinimg.com/originals/50/db/f8/50dbf8e902e1d81c01a1ff860b0e3d86.jpg"
+          src={chuwi}
           alt="Third slide"
         />
 
