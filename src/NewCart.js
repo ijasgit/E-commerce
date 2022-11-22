@@ -5,10 +5,16 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import "../src/newcart.css";
 import HeaderNewcart from "./HeaderNewcart";
 import "../src/headerNewCart.css";
+import { useEffect } from "react";
 import Footer from "./Footer";
 
 
 function Newcart() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   var totalAmount = 0;
   const state = useSelector((state) => state);
   const [newcart, setnewcart] = React.useState(state.cart.cartitem);
@@ -41,7 +47,6 @@ function Newcart() {
   }
 
   function remove(data) {
-    // console.log(data.id);
     dispatch(deleteTocart({ id: data.id }));
     setnewcart((prevalue) => prevalue.filter((item) => data.id !== item.id));
   }

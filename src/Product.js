@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import UncontrolledExample from "./UncontrolledExample";
 
 function Product() {
+    
   const [items, setitem] = useState(datas);
   const state = useSelector((state) => state.cart);
   console.log("app", state);

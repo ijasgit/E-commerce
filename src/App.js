@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useEffect } from "react";
 import "./App.css";
 // import datas from "./data";
 // import { useSelector, useDispatch } from "react-redux";
@@ -12,6 +13,9 @@ import UncontrolledExample from "./UncontrolledExample";
 import Product from "./Product";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // function remove(data) {
   //   // console.log(data.id);
   //   data.qty = 0;
