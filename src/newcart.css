@@ -8,18 +8,14 @@ table,tr,td{
 
 }
 td{
-    /* border: 2px solid; */
     padding: 20px 0px;
-    /* font-size: xx-large;
-    font-weight: bold; */
-  
 }
 table{
-    width: 45%;
-    /* margin-top: 100px;
-    box-shadow: 15px 15px #ffffff4d;
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png"); */
+    width: 40%;
+}
+tfoot{
+    border-top: 1px #00000017 solid;
+
 }
 .cartchildcontainer{
  display: flex;
@@ -40,10 +36,6 @@ tr{
 }
 
 .cartmaincontainer{
-  
-    /* align-items: center; */
-    /* background-color: #000000b5;
-    background-image: url("https://www.transparenttextures.com/patterns/climpek.png"); */
     min-height: 948px;
 }
 
@@ -54,8 +46,6 @@ tr{
 
 .plusbtn{
     border-radius:0px 5px 5px 0px ;
-    /* width: 40px; */
-    /* height: 53px; */
     border: 2px #0000001f solid;
     background-color: white;
 }
@@ -69,11 +59,8 @@ tr{
 
 }
 .cartbtn span{
-    /* border-top: 2px solid;
-    border-bottom: 2px solid; */
     padding: 6px 10px 5.5px 5px;
     background-color: #c7c4c46b;
-
 }
 
 #deletebtn{
@@ -83,6 +70,8 @@ tr{
 #deletebtn:hover{
     color: red;
 }
+
+
 
 @media (max-width:360px){
 table{
@@ -95,3 +84,11 @@ table{
         width: 600%;
     }
     }
+
+@media (max-width: 375px) {
+    .cartimg {
+        width: 40px;
+        height: 42px;
+}
+}
+ 

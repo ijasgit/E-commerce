@@ -1,9 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import "../src/uncontrolledExample.css"
-import lapwithman from "/home/oem/cardreact/src/images/man with laptop.jpg"
-import threelap from "/home/oem/cardreact/src/images/img-prod-cms-rt-microsoft-com_akamaized_net-RE4V84C.png"
-import asus from "/home/oem/cardreact/src/images/dj2kyvrcs71rc0ec-0_0_desktop_1X.jpg"
-import chuwi from "/home/oem/cardreact/src/images/2020060316041231.jpg"
+import threelap from "/home/oem/Desktop/projects in React/cardreact/src/images/img-prod-cms-rt-microsoft-com_akamaized_net-RE4V84C.png"
+import asus from "/home/oem/Desktop/projects in React/cardreact/src/images/dj2kyvrcs71rc0ec-0_0_desktop_1X.jpg"
+import chuwi from "/home/oem/Desktop/projects in React/cardreact/src/images/2020060316041231.jpg"
 function UncontrolledExample() {
   return (
     <Carousel>

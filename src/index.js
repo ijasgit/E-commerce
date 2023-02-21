@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
 import App from "./App";
 import Login from "./Login";
@@ -11,6 +11,7 @@ import { store } from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  
   <Provider store={store}>
     <HashRouter >
       <Routes>

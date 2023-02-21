@@ -1,19 +1,9 @@
-/* .bodycontainer{
-  background-color: #000000b5;
-  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
-} */
-
-
-
 .maincontainer {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 26px;
-  /* background-color: #000000b5;
-  background-image: url("https://www.transparenttextures.com/patterns/climpek.png"); */
-  /* min-height: 948px; */
   padding: 0px 11px;
   margin-bottom: 50px;
 }
@@ -31,7 +21,6 @@
     border-radius: 5px;
     text-align: center;
     background-color: #f1f1f1;
-    /* background-image: url(https://www.transparenttextures.com/patterns/climpek.png); */
     height: max-content;
     margin-top: 90px;
     align-items: center;
@@ -55,13 +44,15 @@
 }
 
 .appAddcartbtn {
+  margin: auto;
   border: 1px blue solid;
   border-radius: 5px;
+  width: max-content;
 }
 
 .appAddcartbtn:hover {
-  border: 1px green solid;
-  background-color: rgb(0 255 8 / 41%);
+  border: 1px rgb(0 0 0 / 8%) solid;
+  background-color: rgb(0 0 0 / 8%);
 }
 
 .appAddcartbtn p {
@@ -89,7 +80,3 @@
 .horizontalScroll .childcontainers .descripition p{
   width: 300px;
 }
-
-/* .horizontalScroll .snap-x .snap-center{
-  margin-left: 1000px;
-} */

@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTocart, deleteTocart, updateQty } from "./Cardslice";
+import { deleteTocart, updateQty } from "./Cardslice";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "../src/newcart.css";
 import HeaderNewcart from "./HeaderNewcart";
@@ -8,9 +8,7 @@ import "../src/headerNewCart.css";
 import { useEffect } from "react";
 import Footer from "./Footer";
 
-
 function Newcart() {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -53,7 +51,7 @@ function Newcart() {
 
   return (
     <div>
-      <div class="sticky-top">
+      <div className="sticky-top">
         <HeaderNewcart />
       </div>
 
@@ -63,60 +61,66 @@ function Newcart() {
         </div>
         <div className="cartchildcontainer">
           <table>
-            <tr className="firsttr">
-              <td>Product</td>
-              <td>Qty</td>
-              <td>Price</td>
-              <td>Amount</td>
-            </tr>
+            <thead>
+              <tr className="firsttr">
+                <td>Product</td>
+                <td>Qty</td>
+                <td>Price</td>
+                <td>Amount</td>
+              </tr>
+            </thead>
+            <tbody>
+              {newcart.map((item, index) => {
+                totalAmount += item.qty * item.price;
+                console.log("map", totalAmount);
+                return (
+                  <tr key={index}>
+                    <td>
+                      <img className="cartimg" src={item.image} alt="image" />
+                      {item.name}
+                    </td>
 
-            {newcart.map((item, index) => {
-              totalAmount += item.qty * item.price;
-              console.log("map", totalAmount);
-              return (
-                <tr key={index}>
-                  <td>
-                    <img className="cartimg" src={item.image} alt="image" />
-                    {item.name}
-                  </td>
-
-                  <td className="cartbtn">
-                    <button className="minusbtn " onClick={() => decqty(item)}>
-                      -
-                    </button>
-                    <span> {item.qty}</span>
-                    <button className="plusbtn " onClick={() => incqty(item)}>
-                      +
-                    </button>
-                  </td>
-                  <td>{item.price}</td>
-                  <td>{item.qty * item.price}</td>
-                  <td>
-                    <DeleteIcon id="deletebtn" onClick={() => remove(item)} />
-                    {/* <button onClick={() => remove(item)}>Remove</button> */}
-                  </td>
-                </tr>
-              );
-            })}
-            <hr></hr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Total</td>
-              <td>{totalAmount}</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>GST 18%</td>
-              <td>{totalAmount * (18 / 100)}</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Grand Total</td>
-              <td>{totalAmount + totalAmount * (18 / 100)}</td>
-            </tr>
+                    <td className="cartbtn">
+                      <button
+                        className="minusbtn "
+                        onClick={() => decqty(item)}
+                      >
+                        -
+                      </button>
+                      <span> {item.qty}</span>
+                      <button className="plusbtn " onClick={() => incqty(item)}>
+                        +
+                      </button>
+                    </td>
+                    <td>{item.price}</td>
+                    <td>{item.qty * item.price}</td>
+                    <td>
+                      <DeleteIcon id="deletebtn" onClick={() => remove(item)} />
+                    </td>
+                  </tr>
+                );
+              })}
+              </tbody>
+              <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Total</td>
+                <td>{totalAmount}</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>GST 18%</td>
+                <td>{totalAmount * (18 / 100)}</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Grand Total</td>
+                <td>{totalAmount + totalAmount * (18 / 100)}</td>
+              </tr>
+              </tfoot>
           </table>
         </div>
       </div>

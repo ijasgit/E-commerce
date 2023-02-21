@@ -37,7 +37,7 @@ function Login() {
       <div className="body">
         <form className="loginContainer">
           <div className="mb-3">
-            <label for="exampleInputEmail1" className="form-label">
+            <label  className="form-label">
               Email address
             </label>
             <input
@@ -52,7 +52,7 @@ function Login() {
             </div>
           </div>
           <div className="mb-3">
-            <label for="exampleInputPassword1" className="form-label">
+            <label  className="form-label">
               Password
             </label>
             <div className="passwordfield">

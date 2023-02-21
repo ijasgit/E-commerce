@@ -1,28 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useNavigate } from "react-router-dom";
 import Badge from "@mui/material/Badge";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import datas from "./data";
+import { searchFilter } from "./RawData";
 
 const Header = () => {
+  const [searchitems, setsearchitems] = useState("");
+  const dispatch = useDispatch();
+  console.log("searchitems", searchitems);
   const state = useSelector((state) => state);
   var array = state.cart.cartitem.length;
   console.log("header state array", array);
 
   const navto = useNavigate();
 
+  function searchBarFunction(event) {
+    console.log("changing", event.target.value);
+    var newset = event.target.value;
+    setsearchitems(newset);
+    var val="corrrfklvml"
+    dispatch(searchFilter(val))
+  }
+
   return (
-    <div >
+    <div>
       <div className="header">
         <div title="logo">
           <img src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/Logo_95x.png?v=1614293854" />
         </div>
         <div className="options">
-        
-        
           <div className="searchComponent">
             <input
+              onChange={searchBarFunction}
               title="search product what you need..."
               className="searchBar"
               placeholder=""
@@ -31,7 +43,6 @@ const Header = () => {
               <iconify-icon icon="fa-solid:search"></iconify-icon>
             </div>
           </div>
-          {/* <button className='loginBtn'>Login</button> */}
           <div title="Cart">
             <Badge badgeContent={array} id="badgenoti" color="primary">
               <ShoppingCartIcon
@@ -72,7 +83,7 @@ const Header = () => {
               <a href="#">Logout</a>
             </div>
           </div>
-         </div>
+        </div>
       </div>
     </div>
   );

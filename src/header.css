@@ -30,7 +30,6 @@ h3{
     border-radius: 5px 0px 0px 5px;
     text-align: center;
     outline: 0 none;
-    /* border-color:#f1f1f1 ; */
     background-color: #ffffffb8;
     border: 1px #0000004f solid;
     border-right: none;
@@ -62,9 +61,7 @@ h3{
     font-size: 26px;
     margin-top: 3px;
 }
-/* #cartlogo:hover,.locationLogo:hover,.header .logo:hover{
-    color:aliceblue
-} */
+
 .dropDown .locationLogo:hover{
     color: black;
 }
@@ -89,7 +86,6 @@ h3{
 }
 .dropDown{
     position: relative;
-    /* display: inline-block; */
 }
 .dropDown-content a:hover {
     background-color: rgb(255, 255, 255);
