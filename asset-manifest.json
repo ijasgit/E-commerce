@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/E-commerce/static/css/main.174a64d7.css",
-    "main.js": "/E-commerce/static/js/main.7cbc86e6.js",
+    "main.css": "/E-commerce/static/css/main.decf7421.css",
+    "main.js": "/E-commerce/static/js/main.15e604d5.js",
     "static/media/img-prod-cms-rt-microsoft-com_akamaized_net-RE4V84C.png": "/E-commerce/static/media/img-prod-cms-rt-microsoft-com_akamaized_net-RE4V84C.04788b8c0a3796b70b1b.png",
     "static/media/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w-removebg-preview.png": "/E-commerce/static/media/hp-laptop-transparent-images-png-11526908147mtxyfl2i3w-removebg-preview.2b669ab2ca5b2ada5d58.png",
     "static/media/dj2kyvrcs71rc0ec-0_0_desktop_1X.jpg": "/E-commerce/static/media/dj2kyvrcs71rc0ec-0_0_desktop_1X.64be591cd154a815913c.jpg",
@@ -9,13 +9,12 @@
     "static/media/download-removebg-preview.png": "/E-commerce/static/media/download-removebg-preview.1ce770684eb03df0feb1.png",
     "static/media/images-removebg-preview.png": "/E-commerce/static/media/images-removebg-preview.9e06f875dd44d68be880.png",
     "static/media/download-removebg-preview (1).png": "/E-commerce/static/media/download-removebg-preview (1).def896f4a172f23a003e.png",
-    "static/media/man with laptop.jpg": "/E-commerce/static/media/man with laptop.2e4118dec5bb2e76e7f3.jpg",
     "index.html": "/E-commerce/index.html",
-    "main.174a64d7.css.map": "/E-commerce/static/css/main.174a64d7.css.map",
-    "main.7cbc86e6.js.map": "/E-commerce/static/js/main.7cbc86e6.js.map"
+    "main.decf7421.css.map": "/E-commerce/static/css/main.decf7421.css.map",
+    "main.15e604d5.js.map": "/E-commerce/static/js/main.15e604d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.174a64d7.css",
-    "static/js/main.7cbc86e6.js"
+    "static/css/main.decf7421.css",
+    "static/js/main.15e604d5.js"
   ]
 }
